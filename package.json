@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@kngsthvs/eslint-config": "workspace:*",
+    "@kngsthvs/prettier-config": "workspace:*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "eslintConfig": {
+    "extends": "@kngsthvs",
+    "root": true
+  },
+  "name": "config",
+  "packageManager": "pnpm@7.27.1",
+  "prettier": "@kngsthvs/prettier-config",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ]
+}

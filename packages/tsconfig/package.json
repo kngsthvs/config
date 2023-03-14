@@ -1,0 +1,9 @@
+{
+  "files": [
+    "base.json",
+    "nextjs.json",
+    "react-library.json"
+  ],
+  "name": "@kngsthvs/tsconfig",
+  "version": "0.0.0"
+}

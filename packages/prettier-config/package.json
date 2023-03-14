@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "tsup": "^6.6.3",
+    "typescript": "^4.7.4"
+  },
+  "main": "dist/index.js",
+  "name": "@kngsthvs/prettier-config",
+  "peerDependencies": {
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "prettier-plugin-css-order": "^1.3.0",
+    "prettier-plugin-organize-imports": "^3.2.2"
+  },
+  "scripts": {
+    "build": "tsup index.cjs --format cjs --dts"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.0.0"
+}
