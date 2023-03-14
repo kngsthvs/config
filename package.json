@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@changesets/changelog-git": "^0.1.14",
     "@changesets/cli": "^2.26.0",
     "@kngsthvs/eslint-config": "workspace:*",
     "@kngsthvs/prettier-config": "workspace:*",
@@ -19,7 +20,8 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "publish": "turbo run build lint test && changeset version && changeset publish"
   },
   "version": "0.0.0",
   "workspaces": [
